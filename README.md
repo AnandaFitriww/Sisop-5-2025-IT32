@@ -2,10 +2,10 @@
 
 ## Kelompok
 
-Nama | NRP
---- | ---
-Amoes Noland | 5027231028
-Rafi' Afnaan Fathurrahman | 5027231040
+| No | Nama                   | NRP         |
+|----|------------------------|-------------|
+| 1  | Ananda Fitri Wibowo    | 5027241057  |
+| 2  | Raihan Fahri Ghazali   | 5027241061  |
 
 ## Daftar Isi
 
