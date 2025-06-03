@@ -2,38 +2,40 @@
 
 int div(int a, int b)
 {
-  //TODO: Implementasi pembagian
-  //NOTE: HARUS BISA ANGKA NEGATIF
+  // Belum diperlukan untuk soal no 2
 }
 
 int mod(int a, int b)
 {
-  //TODO: Implementasi modulus
+  // Belum diperlukan untuk soal no 2
 }
 
 bool strcmp(char *str1, char *str2)
 {
-  //TODO: Implementasi perbandingan string
+  while (*str1 && *str2) {
+    if (*str1 != *str2) return false;
+    str1++;
+    str2++;
+  }
+  return (*str1 == '\0' && *str2 == '\0');
 }
 
 void strcpy(char *dst, char *src)
 {
-  //TODO: Implementasi penyalinan string
+  // Belum diperlukan untuk soal no 2
 }
 
 void clear(byte *buf, unsigned int size)
 {
-  //TODO: Implementasi pembersihan buffer
+  // Belum diperlukan untuk soal no 2
 }
 
 void atoi(char *str, int *num)
 {
-  //TODO: Implementasi konversi string ke integer
-  //NOTE: HARUS BISA ANGKA NEGATIF
+  // Belum diperlukan untuk soal no 2
 }
 
 void itoa(int num, char *str)
 {
-  //TODO: Implementasi konversi integer ke string
-  //NOTE: HARUS BISA ANGKA NEGATIF
+  // Belum diperlukan untuk soal no 2
 }
