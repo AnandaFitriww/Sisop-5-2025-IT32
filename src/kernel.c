@@ -1,5 +1,6 @@
 #include "shell.h"
 #include "kernel.h"
+#include "std_lib.h"
 
 int main() {
   clearScreen();
@@ -10,7 +11,7 @@ void printString(char *str)
 {
   while (*str != 0) {
     __asm__ volatile(
-      "mov $0x0E, %%ah \n"  
+      "mov $0x0E, %%ah \n"
       "mov %0, %%al \n"
       "int $0x10"
       :
@@ -27,7 +28,7 @@ void readString(char *buf)
 
   while (1) {
     __asm__ volatile(
-      "mov $0x00, %%ah \n"  
+      "mov $0x00, %%ah \n"
       "int $0x16 \n"
       "mov %%al, %0"
       : "=r" (c)
@@ -53,12 +54,11 @@ void readString(char *buf)
       );
     }
   }
-  buf[i] = '\0'; 
+  buf[i] = '\0';
   printString("\n");
 }
 
 void clearScreen()
 {
-
-printString("\033[2J\033[H");
+  printString("\033[2J\033[H");
 }
