@@ -2,12 +2,12 @@
 
 int div(int a, int b)
 {
-  // Belum diperlukan untuk soal no 2
+  
 }
 
 int mod(int a, int b)
 {
-  // Belum diperlukan untuk soal no 2
+
 }
 
 bool strcmp(char *str1, char *str2)
@@ -22,20 +22,27 @@ bool strcmp(char *str1, char *str2)
 
 void strcpy(char *dst, char *src)
 {
-  // Belum diperlukan untuk soal no 2
+  while (*src != '\0') {
+    *dst = *src;
+    dst++;
+    src++;
+  }
+  *dst = '\0';
 }
 
 void clear(byte *buf, unsigned int size)
 {
-  // Belum diperlukan untuk soal no 2
+  for (unsigned int i = 0; i < size; i++) {
+    buf[i] = '\0';
+  }
 }
 
 void atoi(char *str, int *num)
 {
-  // Belum diperlukan untuk soal no 2
+
 }
 
 void itoa(int num, char *str)
 {
-  // Belum diperlukan untuk soal no 2
+
 }
