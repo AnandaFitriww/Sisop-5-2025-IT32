@@ -2,14 +2,21 @@
 #include "kernel.h"
 #include "std_lib.h"
 
-void shell(){
+void shell() {
   char buf[128];
   printString("Welcome to EorzeOS!\n");
   while (true) {
     printString("> ");
     readString(buf);
-    printString(buf);
-    printString("\n");
+
+    if (strcmp(buf, "yo")) {
+      printString("gurt\n");
+    } else if (strcmp(buf, "gurt")) {
+      printString("yo\n");
+    } else {
+      printString(buf);
+      printString("\n");
+    }
   }
 }
 
